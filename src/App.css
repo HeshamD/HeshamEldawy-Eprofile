@@ -119,3 +119,34 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/*Lists*/
+.list {
+  list-style: none;
+  padding-left: 0;
+  /* to get rid of the padding left that's by default been applied by the browser*/
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  /*so we can apply margins*/
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(/public/tick.svg);
+  padding-left: 3rem;
+  /*this to make the images next to the list presentable */
+}
+
+.list--tick .list__item {
+  padding-left: .5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width:1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
