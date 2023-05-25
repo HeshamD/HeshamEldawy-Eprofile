@@ -1,0 +1,40 @@
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    padding-top: 4rem;
+}
+
+.hero__tagline {
+    font-size: 1.5rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 2rem;
+}
+
+.hero__image {
+    width: 100%;
+    margin: 4rem 5rem;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotateY('360deg');
+    }
+}
+
+.hero__heading {
+    font-size: 6.5rem;
+}
+
+.hero__btn {
+    padding: 1rem 7rem;
+}
+
+@media screen and (min-width:768px) {
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
+}

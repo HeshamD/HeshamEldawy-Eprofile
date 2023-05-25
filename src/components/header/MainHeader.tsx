@@ -1,4 +1,4 @@
-import './navStyling.css';
+import './NavStyling.css';
 const MainHeader = () => {
     return (
         <header>

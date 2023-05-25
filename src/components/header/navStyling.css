@@ -18,12 +18,12 @@
 }
 
 .nav__item>a {
-    color: #d2d0db;
+    color: #fff;
     transition: color 0.15s;
 }
 
 .nav__item>a:hover {
-    color: #fff;
+    color: #d2d0db;
 }
 
 .nav__toggler {
@@ -49,6 +49,7 @@
         font-size: 1.6rem;
         max-height: 100%;
         opacity: 1;
+        margin-right: 6rem;
     }
 
     .nav__item {
