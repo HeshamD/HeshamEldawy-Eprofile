@@ -1,0 +1,33 @@
+.project__contents {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.project_img {
+    width: 400px;
+    height: 400px;
+    margin-right: 1.2rem;
+
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project__text .project__img:hover {
+    border-bottom: 2px solid white;
+}
+
+.project__text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-weight: 2rem;
+}
+
+.project__type {
+    font-size: 1.3rem;
+    font-weight: 2rem;
+    font-family: serif;
+}

@@ -2,14 +2,18 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  background-color: black;
+}
+
+/* Hide the scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
 }
 
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
-  --color-headings: #1b0760;
+  --color-accent: #682Ae9;
+  --color-headings: #fff;
   --color-body: #918ca4;
   --color-border: #ccc;
   --border-radius: 30px;
@@ -21,10 +25,11 @@ html {
 
 body {
   /* font-family: 'Source Sans Pro', sans-serif; */
-  font-family: 'Rajdhani', sans-serif;
+  /* font-family: 'Rajdhani', sans-serif; */
+  font-family: 'Roboto Mono', monospace;
   font-size: 2.4rem;
   line-height: 1.5;
-  color: var(--color-body);
+  background-color: black;
 }
 
 h1,
@@ -32,15 +37,15 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -55,6 +60,7 @@ p {
   max-width: 1140px;
   margin: 0 auto;
 }
+
 
 @media screen and (min-width:1024px) {
   body {
@@ -76,12 +82,22 @@ p {
 }
 
 span {
-  color: white;
+  color: var(--color-accent);
+}
+
+/*span*/
+.span-block {
+  display: block;
 }
 
 /*Links*/
 a {
   text-decoration: none;
+}
+
+.link--img:hover img {
+  opacity: 80%;
+  transition: opacity .5s;
 }
 
 .link-arrow {
@@ -91,8 +107,8 @@ a {
   font-weight: bold;
 }
 
-.link-arrow ::after {
-  content: '-->';
+.link-arrow::after {
+  content: '.()';
   margin-left: 5px;
   transition: margin 0.15s;
 }
@@ -129,6 +145,7 @@ a {
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width:1024px) {
@@ -152,7 +169,7 @@ a {
 .list--inline .list__item {
   display: inline-block;
   /*so we can apply margins*/
-  margin-right: 2rem;
+  /* margin: 0 0 0 .4rem; */
 }
 
 .list--tick {
@@ -186,7 +203,7 @@ a {
   fill: white;
 }
 
-.icon-contianer {
+.icon-container {
   background: #f3f9f8;
   width: 64px;
   height: 64px;
@@ -332,6 +349,10 @@ a {
   color: #fff;
 }
 
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+
 /*media*/
 
 .media {
@@ -352,8 +373,8 @@ a {
 
 /*block*/
 .block {
-  --padding-vertical: 6rem;
-  padding: var(--padding-vertical) 2rem;
+  --padding-vertical: 4rem;
+  padding: var(--padding-vertical) 1.5rem 0 1.5rem;
 }
 
 .block__header {
@@ -390,11 +411,17 @@ a {
 }
 
 @media screen and (min-width:768px) {
-  .hero {
-    padding-top: 0;
-  }
-
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/*Plans*/
+
+/*Divider*/
+
+
+/*feature*/
+.feature__heading {
+  margin: 1rem 0;
 }

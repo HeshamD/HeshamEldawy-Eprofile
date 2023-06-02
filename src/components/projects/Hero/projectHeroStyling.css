@@ -1,0 +1,43 @@
+.feature {
+    height: 100vh;
+    scroll-snap-align: center;
+    gap: 8rem 4rem;
+    margin: 12rem 0;
+    padding-top: 10rem;
+}
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
+
+.feature__description {
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.feature__tools {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: #ccc;
+}
+
+.feature__link {
+    font-size: 1rem;
+    color: #2584ff;
+}
+
+.feature__heading {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.feature__img {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
+}

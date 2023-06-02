@@ -1,0 +1,35 @@
+.divider {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.block .divider {
+    margin-top: 0rem;
+}
+
+.divider__title {
+    margin-top: 1rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.divider__link {
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    transition: color 0.15s;
+    border-bottom: 1px solid;
+}
+
+.divider__link:hover {
+    color: #d2d0db;
+}
+
+.divider__link::after {
+    content: '';
+}
