@@ -39,9 +39,6 @@ const MainHeader = () => {
                         <NavLink to="/work_Experience">.WorkExperience()</NavLink>
                     </li>
                     <li className='nav__item'>
-                        <NavLink to="/#skills">.Skills()</NavLink>
-                    </li>
-                    <li className='nav__item'>
                         <NavLink to="/education">.Education()</NavLink>
                     </li>
                     <li className='nav__item'>

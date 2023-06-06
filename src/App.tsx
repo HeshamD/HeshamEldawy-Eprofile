@@ -3,14 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import MainHeader from './components/header/MainHeader';
-import Hero from './components/home/hero/Hero';
-import HomeProject from './components/home/homeProject/HomeProject';
-import Home from './components/home/Home';
+import Hero from './pages/Home/hero/Hero';
+import HomeProject from './pages/Home/project/Project';
+import Home from './pages/Home/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ProjectPage from './components/projects/ProjectPage';
-// import Contact from './components/contact/Contact';
-import WorkExperience from './components/workExperience/WorkExperience';
-
+import ProjectPage from './pages/projects/ProjectPage';
+import Contact from './components/contact/Contact';
+import Experience from './pages/Experience/Experience';
 function App() {
 
   return (
@@ -19,8 +18,8 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path='/projects' element={<ProjectPage />} />
-          {/* <Route path='/contacts' element={<Contact />} /> */}
-          <Route path='/work_Experience' element={<WorkExperience />} />
+          <Route path='/contacts' element={<Contact />} />
+          <Route path='/work_Experience' element={<Experience />} />
         </Routes>
       </BrowserRouter>
     </div >
