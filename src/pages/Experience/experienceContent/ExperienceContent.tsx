@@ -4,45 +4,34 @@ import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { textVariant } from "../../../util/motion";
-import { experiences } from './ExperienceConst';
+import experiences, { Experience } from './ExperienceConst';
 
 import './ExperienceContentStyling.css';
 
-interface Experience {
-    title: string;
-    company_name: string;
-    icon: string;
-    iconBg: string;
-    date: string;
-    points: string[];
-    iconHeight: string;
-    iconWidth: string;
-}
-
-const ExperienceCard: React.FC<Experience> = ({ title, company_name, icon, iconBg, date, points }) => {
+const ExperienceCard: React.FC<Experience> = (experiences: Experience) => {
     return (
         <VerticalTimelineElement
             contentStyle={{
                 background: "#1d1836",
                 color: "#fff",
-                padding: '1.5rem'
+                padding: '1rem'
             }}
             contentArrowStyle={{ borderRight: "20px solid  #232631" }}
-            date={date}
-            iconStyle={{ background: iconBg }}
+            date={experiences.date}
+            iconStyle={{ background: experiences.iconBg }}
             icon={
                 <div className='experienceCard__img'>
-                    <img src={icon} alt={company_name} />
+                    <img src={experiences.icon.src} alt={experiences.company_name} style={{ width: experiences.icon.width, height: experiences.icon.height }} />
                 </div>
             }
         >
             <header>
-                <h3 className='experienceCard__title'>{title}</h3>
-                <p className='experienceCard__text' >{company_name}</p>
+                <h3 className='experienceCard__title'>{experiences.title}</h3>
+                <p className='experienceCard__text' >{experiences.company_name}</p>
             </header>
 
             <ul>
-                {points.map((point, index) => (
+                {experiences.points.map((point, index) => (
                     <li key={`experience-point-${index}`} className='experienceCard__listItem'>
                         {point}
                     </li>
