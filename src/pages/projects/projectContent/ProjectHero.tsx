@@ -1,5 +1,4 @@
 import React from 'react';
-import './projectHeroStyling.css';
 
 interface Project {
     title: string;

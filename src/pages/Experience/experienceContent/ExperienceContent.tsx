@@ -15,6 +15,8 @@ interface Experience {
     iconBg: string;
     date: string;
     points: string[];
+    iconHeight: string;
+    iconWidth: string;
 }
 
 const ExperienceCard: React.FC<Experience> = ({ title, company_name, icon, iconBg, date, points }) => {
