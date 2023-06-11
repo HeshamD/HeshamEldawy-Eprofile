@@ -1,0 +1,61 @@
+.salute {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.saluteImgContainer {
+    flex: 1;
+}
+
+.saluteTextContainer {
+    flex: 3;
+}
+
+.saluteImg {
+    width: 100%;
+}
+
+.saluteText {
+    font-size: 60vw;
+}
+
+.nameContainer {
+    height: 100vh;
+    background-color: white;
+}
+
+.name {
+    color: black;
+    font-size: 20vw;
+    cursor: default;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.jobTitleContainer {
+    height: 100vh;
+}
+
+.dark-bg {
+    background: url('home/mainImgs/bg1.png');
+}
+
+.white-bg {
+    background: white url('home/mainImgs/bg2.png');
+}
+
+.jobTitle {
+    line-height: 100vh;
+    cursor: default;
+}
+
+.jobTitle__first {
+    font-size: 7.8vw;
+}
+
+.jobTitle__second {
+    color: black;
+    font-size: 11vw;
+}

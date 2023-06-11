@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
@@ -42,6 +42,9 @@ const ExperienceCard: React.FC<Experience> = (experiences: Experience) => {
 };
 
 const ExperienceContent: React.FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to top when component is mounted
+    }, []);
     return (
         <div className="block container">
             <motion.div variants={textVariant(1)} className="block__header">

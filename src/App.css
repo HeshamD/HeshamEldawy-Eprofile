@@ -90,9 +90,18 @@ span {
   display: block;
 }
 
+/* Home */
+.wide-containe {
+  overflow: hidden;
+}
+
 /*Links*/
 a {
   text-decoration: none;
+}
+
+.link {
+  cursor: pointer;
 }
 
 .link--img:hover img {
@@ -525,4 +534,26 @@ a {
   font-size: 1rem;
   margin: .5rem;
   font-weight: 200;
+}
+
+/*box model*/
+
+.box {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: white;
+  background-image: url('/projects_imgs/bg.jpeg');
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+/*main landing page*/
+.wide-container {
+  overflow: hidden;
 }

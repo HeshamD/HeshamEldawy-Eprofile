@@ -1,0 +1,8 @@
+.changeThemeContainer {
+    height: 100vh;
+}
+
+.changeThemeTitle {
+    line-height: 100vh;
+    cursor: default;
+}

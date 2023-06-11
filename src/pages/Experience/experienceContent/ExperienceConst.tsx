@@ -31,23 +31,6 @@ const experiences: Experience[] = [
         ]
     },
     {
-        title: ".NET Developer",
-        company_name: "NYC Department of Citywide Administrative Services",
-        icon: {
-            src: "experiencePageImgs/NYC_HRA.jpg",
-            width: "100%",
-            height: "80%",
-        },
-        iconBg: "#FFF",
-        date: "Dec 2021 - Jun 2022",
-        points: [
-            "Played a key role in front-end development for the CIMA website, showcasing proficiency in responsive design, web browser compatibility, and front-end programming skills such as HTML5, CSS3, JavaScript, and AJAX.",
-            "Collaborated with a team of 5 software engineers to develop and maintain various software applications built on different frameworks, including Angular.js.",
-            "Utilized C# and the .NET framework to create a comprehensive user management system, including database seeding, leveraging the power of Entity Framework.",
-            "Led front-end development efforts for the CIMA website, ensuring seamless user experience through responsive design, web browser compatibility, and proficient use of HTML5, CSS3, JavaScript, and AJAX."
-        ],
-    },
-    {
         title: "Software Engieer",
         company_name: "CME Group",
         icon: {
@@ -63,6 +46,23 @@ const experiences: Experience[] = [
             "Participated in the full software development lifecycle, including requirements gathering, design, coding, testing, and deployment.",
             "Utilized technologies such as Java, C++, and Python to build robust and scalable software systems that handle large volumes of financial data",
             "Implemented and optimized algorithms and data structures to improve system performance and reduce latency in trading operation"
+        ],
+    },
+    {
+        title: ".NET Developer",
+        company_name: "NYC Department of Citywide Administrative Services",
+        icon: {
+            src: "experiencePageImgs/NYC_HRA.jpg",
+            width: "100%",
+            height: "80%",
+        },
+        iconBg: "#FFF",
+        date: "Dec 2021 - Jun 2022",
+        points: [
+            "Played a key role in front-end development for the CIMA website, showcasing proficiency in responsive design, web browser compatibility, and front-end programming skills such as HTML5, CSS3, JavaScript, and AJAX.",
+            "Collaborated with a team of 5 software engineers to develop and maintain various software applications built on different frameworks, including Angular.js.",
+            "Utilized C# and the .NET framework to create a comprehensive user management system, including database seeding, leveraging the power of Entity Framework.",
+            "Led front-end development efforts for the CIMA website, ensuring seamless user experience through responsive design, web browser compatibility, and proficient use of HTML5, CSS3, JavaScript, and AJAX."
         ],
     }
 ];

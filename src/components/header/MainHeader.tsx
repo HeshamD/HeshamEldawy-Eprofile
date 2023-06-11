@@ -2,23 +2,7 @@ import { useEffect } from 'react';
 import './NavStyling.css';
 import { Link, NavLink } from 'react-router-dom';
 const MainHeader = () => {
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
-    const handleScroll = () => {
-        const navbar = document.querySelector('.nav');
-        if (navbar) {
-            if (window.pageYOffset > 0) {
-                navbar.classList.add('sticky');
-            } else {
-                navbar.classList.remove('sticky');
-            }
-        }
-    };
     return (
         <header>
             <nav className='nav collasible collasible--expanded'>
