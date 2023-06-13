@@ -6,6 +6,7 @@ export interface Project {
     projectDevice: string;
     ProjectDeviceClass: string;
     ProjectImgClass: string;
+    projectLink: string;
 }
 
 const projects: Project[] = [
@@ -18,7 +19,8 @@ const projects: Project[] = [
         projectImg: "home/mainImgs/translation.png",
         projectDevice: "home/mainImgs/phone.png",
         ProjectDeviceClass: "phoneScreen",
-        ProjectImgClass: "phoneApp"
+        ProjectImgClass: "phoneApp",
+        projectLink: "google"
     },
     {
         title: "Online Fitness Coaching",
@@ -27,8 +29,8 @@ const projects: Project[] = [
         projectImg: "home/mainImgs/fitness.png",
         projectDevice: "home/mainImgs/laptop.png",
         ProjectDeviceClass: "laptopScreen",
-        ProjectImgClass: "laptopApp"
-
+        ProjectImgClass: "laptopApp",
+        projectLink: "google"
     }
 ];
 

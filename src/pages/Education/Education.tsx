@@ -1,6 +1,7 @@
 import React from "react";
 import MainHeader from "../../components/header/MainHeader";
 import EducationContent from "./EducationContent";
+import FooterContent from "../../components/footer/FooterContent";
 
 const Education = () => {
 
@@ -8,6 +9,7 @@ const Education = () => {
         <div>
             <MainHeader />
             <EducationContent />
+            <FooterContent />
         </div>
     );
 }

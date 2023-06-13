@@ -8,7 +8,6 @@ const MainHeader = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
     const handleScroll = () => {
         const navbar = document.querySelector('.nav');
         if (navbar) {
@@ -27,6 +26,7 @@ const MainHeader = () => {
             }
         }
     };
+
     return (
         <header>
             <nav className='nav collasible collasible--expanded'>
@@ -48,12 +48,6 @@ const MainHeader = () => {
                     </li>
                     <li className='nav__item'>
                         <NavLink to="/education">.Education()</NavLink>
-                    </li>
-                    <li className='nav__item'>
-                        <NavLink to="/awards">.Awards()</NavLink>
-                    </li>
-                    <li className='nav__item'>
-                        <NavLink to="/blog">.Blog()</NavLink>
                     </li>
                     <li className='nav__item'>
                         <NavLink to="/contacts">.Contact()</NavLink>

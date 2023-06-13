@@ -145,7 +145,7 @@
     }
 
     .projectDesc {
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: start
     }
 
@@ -153,29 +153,44 @@
         flex-direction: column;
     }
 
+    /*phone*/
+    .phoneScreen {
+        width: 15.1rem;
+        height: 32rem;
+        margin-left: .7rem;
+    }
+
+    .phoneImg {
+        width: 17rem;
+    }
+
+    /*laptop*/
+
+    .laptopImg {
+        width: 20rem;
+    }
+
+    .laptopScreen {
+        width: 15rem;
+        height: 9.5rem;
+        left: 11rem;
+        top: .6rem;
+        border-radius: 1px;
+    }
+
     .phone,
     .laptop {
         transform: none !important;
     }
 
-    .laptop {
-        width: 40rem;
-    }
-
-    .laptop img {
-        width: 25rem;
-    }
-
-    .laptopScreen {
-        width: 19rem;
-        height: 12rem;
-        left: 10.3rem;
-        top: .7rem;
-        border-radius: 5px;
-    }
-
     .projectButton {
         margin-bottom: 3rem;
+        font-size: 1.5rem;
     }
+
+    .projectTitle {
+        line-height: 2.5rem;
+    }
+
 
 }

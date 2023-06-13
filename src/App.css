@@ -557,3 +557,18 @@ a {
 .wide-container {
   overflow: hidden;
 }
+
+/*Testimonials*/
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__img {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .testimonial {
+    font-size: 2rem;
+  }
+}

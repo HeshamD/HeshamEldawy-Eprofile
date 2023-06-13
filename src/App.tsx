@@ -5,6 +5,7 @@ import Contact from './pages/Contact/Contact';
 import Experience from './pages/Experience/Experience';
 import Education from './pages/Education/Education';
 import ProjectModel from './pages/projects/ProjectModel';
+import ContactModel from './pages/Contact/ContactModel';
 function App() {
   return (
     <div className="App">
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path='/projects' element={<ProjectModel />} />
-          <Route path='/contacts' element={<Contact />} />
+          <Route path='/contacts' element={<ContactModel />} />
           <Route path='/work_Experience' element={<Experience />} />
           <Route path='/education' element={<Education />} />
         </Routes>

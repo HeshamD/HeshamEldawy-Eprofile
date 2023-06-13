@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
             {projects.map((project, index) => (
                 <div className="project" key={index}>
                     <div className={project.projectType}>
-                        <img src={project.projectDevice} alt="" />
+                        <img src={project.projectDevice} alt="" className={`${project.projectType}Img`} />
                         <div className={project.ProjectDeviceClass}>
                             <img src={project.projectImg} alt="" className={project.ProjectImgClass} />
                         </div>
@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
                     <div className="projectDetail">
                         <h1 className="projectTitle">{project.title}</h1>
                         <p className="projectDesc">{project.projectDesc}</p>
-                        <button className="projectButton">Learn More</button>
+                        <a href={project.projectLink} className="projectButton">Learn More</a>
                     </div>
                 </div>
             ))}
