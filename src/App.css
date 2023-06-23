@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *,
 *::after,
 *::before {
@@ -12,7 +15,7 @@
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-accent: #682Ae9;
+  --color-accent: #682ae9;
   --color-headings: #fff;
   --color-body: #918ca4;
   --color-border: #ccc;
@@ -26,7 +29,7 @@ html {
 body {
   /* font-family: 'Source Sans Pro', sans-serif; */
   /* font-family: 'Rajdhani', sans-serif; */
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 2.4rem;
   line-height: 1.5;
   background-color: black;
@@ -61,8 +64,7 @@ p {
   margin: 0 auto;
 }
 
-
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
   }
@@ -78,7 +80,6 @@ p {
   h3 {
     font-size: 2.5rem;
   }
-
 }
 
 span {
@@ -106,7 +107,7 @@ a {
 
 .link--img:hover img {
   opacity: 80%;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .link-arrow {
@@ -117,7 +118,7 @@ a {
 }
 
 .link-arrow::after {
-  content: '.()';
+  content: ".()";
   margin-left: 5px;
   transition: margin 0.15s;
 }
@@ -126,7 +127,7 @@ a {
   margin-left: 10px;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
   }
@@ -157,7 +158,7 @@ a {
   padding: 0.5rem 1.5rem;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.5rem;
   }
@@ -188,11 +189,11 @@ a {
 }
 
 .list--tick .list__item {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .list--tick .list__item {
     padding-left: 0;
   }
@@ -294,7 +295,7 @@ a {
   color: #fff;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
   }
@@ -330,7 +331,7 @@ a {
   margin: 4px;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
   }
@@ -419,7 +420,7 @@ a {
   display: grid;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -428,7 +429,6 @@ a {
 /*Plans*/
 
 /*Divider*/
-
 
 /*feature*/
 .feature__heading {
@@ -486,7 +486,7 @@ a {
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
-  background-image: url('/projects_imgs/bg.jpeg');
+  background-image: url("/projects_imgs/bg.jpeg");
 
   &::-webkit-scrollbar {
     display: none;
@@ -502,7 +502,7 @@ a {
 }
 
 .content__heading {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #4c3e90;
 }
 
@@ -520,7 +520,6 @@ a {
   object-fit: contain;
 }
 
-
 .card--title {
   font-size: 1.6rem;
   color: #fff;
@@ -532,7 +531,7 @@ a {
 
 .card__listItem {
   font-size: 1rem;
-  margin: .5rem;
+  margin: 0.5rem;
   font-weight: 200;
 }
 
@@ -545,12 +544,10 @@ a {
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
-  background-image: url('/projects_imgs/bg.jpeg');
-
+  background-image: url("/projects_imgs/bg.jpeg");
   &::-webkit-scrollbar {
     display: none;
   }
-
 }
 
 /*main landing page*/
@@ -567,8 +564,36 @@ a {
   width: 100%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .testimonial {
     font-size: 2rem;
   }
+}
+
+@font-face {
+  font-family: "Roboto Serif";
+  src: url("path-to-font/roboto-serif.woff2") format("woff2"),
+    url("path-to-font/roboto-serif.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bg-vanshingStripes {
+  background-image: url("/src/assets/vanishing-stripes.svg");
+}
+
+.bg-patternRandomized {
+  background-image: url("/src/assets/pattern-randomized.svg");
+}
+
+.bg-endlessConstellation {
+  background-image: url("/src/assets/endless-constellation.svg");
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.blue_gradient {
+  @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
 }
