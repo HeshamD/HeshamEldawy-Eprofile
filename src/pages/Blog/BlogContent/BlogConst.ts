@@ -3,6 +3,7 @@ interface BlogItem {
   title: string;
   description: string;
   img_w?: number;
+  img_h?: number;
   github?: string;
 }
 
@@ -22,7 +23,8 @@ const blogConst: BlogItem[] = [
      <li><strong>Reduces complexity:</strong> Less time building applications</li>
     </ul>
     `,
-    img_w: 60,
+    img_w: 10,
+    img_h: 20,
     github: ""
   },
   { imageSrc: "logo.png", title: "Title 1", description: "Description 1" },

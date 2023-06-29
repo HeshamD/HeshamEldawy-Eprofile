@@ -8,6 +8,7 @@ interface BlogItem {
   description: string;
   img_w?: number;
   github?: string;
+  img_h?: string;
 }
 
 const BlogContent: FC = () => {
@@ -15,7 +16,7 @@ const BlogContent: FC = () => {
     <div className="container mx-auto">
       {blogConst.map(
         (
-          { imageSrc, title, description, img_w, github }: BlogItem,
+          { imageSrc, title, description, img_w, github, img_h }: BlogItem,
           index: number
         ) => (
           <div key={index} className="bg-white shadow-xl my-5 flex rounded">
@@ -23,7 +24,7 @@ const BlogContent: FC = () => {
               <img
                 src={imageSrc}
                 alt="Image"
-                className={`h-full w-full object-cover w-${img_w}`}
+                className={`h-full w-full object-cover w-${img_w} h-${img_h}`}
               />
             </div>
             <div className="w-3/4 p-4 flex flex-col justify-between">

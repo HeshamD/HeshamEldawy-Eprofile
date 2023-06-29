@@ -12,13 +12,10 @@ function Home() {
         <Projects />
         <ChangeTheme />
       </section>
-      {/* <section className="box overflow-hidden">
+      <section className="box overflow-hidden">
         <MainHeader />
         <Hero />
         <FooterContent />
-      </section> */}
-      <section className="h-screen">
-        <MainHeader />
       </section>
     </main>
   );
